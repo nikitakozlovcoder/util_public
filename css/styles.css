@@ -47,6 +47,11 @@ a {
   color: #656565;
 
 }
+.mce-branding{
+  display: none !important;
+
+}
+
 .brand-char{
   color: #9ed639;
 }
