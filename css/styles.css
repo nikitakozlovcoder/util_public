@@ -1,8 +1,9 @@
 body{
   min-height: 100vh;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
-
+  overflow-x: hidden;
 }
 footer {
   margin-top: auto;
@@ -40,11 +41,16 @@ a {
   align-items: center;
 }
 .brand-text{
+  word-spacing: -3px;
   position: relative;
   margin-left: 10px;
   font-weight: bold;
   font-size: 24px;
-  color: #656565;
+  color: #585858;
+
+}
+.navbar .brand:hover .brand-text{
+  color: #3f3f3f;
 
 }
 .mce-branding{
@@ -72,11 +78,20 @@ a {
   position: fixed;
 }
 
-
+a:hover{
+  color: #81ab35;
+}
 .nav-menu-open{
   display: none;
 }
-
+section#subintro{
+  
+  margin-top: 20px;
+}
+.brand-text-footer{
+  color: #ffff;
+  margin-left: 0;
+}
 @media (max-width: 979px){
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
       padding-bottom: 0;
@@ -84,7 +99,14 @@ a {
 
 }
 @media (max-width: 767px) {
-
+  
+  section#subintro{
+    margin: 0;
+    margin-left: -20px;
+    width: 100vw !important;
+    min-width: 320px;
+    
+  }
   .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{
     border: none;
   }
@@ -124,6 +146,7 @@ a {
   .navbar .nav>li>a {
     padding: 8px;
     width: 100vw;
+    min-width: 320px;
     padding-left: 25px;
   }
   .navbar-inner {
@@ -153,4 +176,5 @@ a {
   .navbar .nav li.active a, .navbar .nav li.active a:hover {
     background: #ffff;
 
+  }
 }
