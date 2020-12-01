@@ -5,6 +5,12 @@ body{
   flex-direction: column;
   overflow-x: hidden;
 }
+.well-row{
+  display: flex;
+}
+.well {
+  height: 100%;
+}
 footer {
   margin-top: auto;
 }
@@ -92,14 +98,43 @@ section#subintro{
   color: #ffff;
   margin-left: 0;
 }
+.home-posts .post-image img{
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+}
+.credits {
+  text-align: left;
+}
+.home-posts .entry-body {
+  margin: 0 0 0 68px;
+}
+.home-big-img{
+  width: 64%;
+}
 @media (max-width: 979px){
+  .home-big-text{
+    background-color: rgb(255, 255, 255, 0.9) !important;
+  }
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
       padding-bottom: 0;
+  }
+  .home-big-img {
+    width: 76% !important;
+    top: 20% !important;
+
   }
 
 }
 @media (max-width: 767px) {
-  
+  .home-posts .post-image img{
+    height: 45vw;
+    width: 100%;
+    object-fit: cover;
+  }
+  .well-row{
+    display: block;
+  }
   section#subintro{
     margin: 0;
     margin-left: -20px;
