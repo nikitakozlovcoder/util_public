@@ -755,11 +755,11 @@ article button.btn {
   margin-bottom: 10px;
 }
 
-article.blog-post img {
+.post-image img {
   margin-bottom: 30px;
 }
 
-article.blog-post img:hover {
+.post-image img:hover {
   /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   /* IE 5-7 */

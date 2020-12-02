@@ -78,6 +78,10 @@ a {
     bottom: 5px;
     right: -10px;
 }
+
+.tiny-text img {
+  padding: 10px 0;
+}
 .tiny-text > h1:after, .tiny-text >h2:after, .tiny-text >h3:after {
   content: "";
   position: absolute;
@@ -127,6 +131,11 @@ section#subintro{
 .home-big-img{
   width: 63%;
 }
+.post-image img {
+  
+  width: 100% !important;
+  object-fit: cover;
+}
 @media (max-width: 979px){
   .home-big-text{
     background-color: rgb(255, 255, 255, 0.9) !important;
@@ -143,12 +152,13 @@ section#subintro{
 }
 @media (max-width: 767px) {
   #intro{
-    margin-top: 65px;
+    margin-top: 65px !important;
   }
   .home-main{
     margin-top: 590px !important;
   }
-  .home-posts .post-image img{
+  .post-image img{
+    min-height: 150px;
     height: 45vw;
     width: 100%;
     object-fit: cover;
@@ -238,5 +248,8 @@ section#subintro{
 
   .footer{
     padding-bottom: 0;
+  }
+  .home-main{
+    margin-top: 440px !important;
   }
 }
