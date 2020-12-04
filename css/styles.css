@@ -151,6 +151,19 @@ section#subintro{
   width: 100% !important;
   object-fit: cover;
 }
+.info h3 {
+  background: #001fb5;
+}
+.col-fit {
+  width: 1%;
+  white-space: nowrap;
+}
+.col-min {
+  min-width: 300px;
+}
+.table-houses a{
+  color: #3f3f3f;
+}
 @media (max-width: 979px){
   .home-big-text{
     background-color: rgb(255, 255, 255, 0.9) !important;
@@ -165,6 +178,7 @@ section#subintro{
   }
 
 }
+
 @media (max-width: 767px) {
   #sequence{
     height: 320px;
