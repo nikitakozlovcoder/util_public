@@ -164,6 +164,9 @@ section#subintro{
 .table-houses a{
   color: #3f3f3f;
 }
+.menu-line{
+  display: none;
+}
 @media (max-width: 979px){
   .home-big-text{
     background-color: rgb(255, 255, 255, 0.9) !important;
@@ -184,7 +187,7 @@ section#subintro{
     height: 320px;
   }
   #intro{
-    margin-top: 65px !important;
+    margin-top: 64px !important;
   }
   .home-main{
     margin-top: 500px !important;
@@ -211,7 +214,7 @@ section#subintro{
   .navbar.navbar-fixed-top{
     border-bottom: 1px solid #e4e4e4;
     overflow: hidden;
-    height: 65px;
+    height: 64px;
     transition: height 0.3s ease-in-out;
     z-index: 100;
     background-color: #ffff;
@@ -224,7 +227,8 @@ section#subintro{
     display: block;
 
   }
-  .navbar hr{
+  .menu-line{
+    display: block;
     width: 95%;
     /* justify-self: center; */
     margin-bottom: 0px;
