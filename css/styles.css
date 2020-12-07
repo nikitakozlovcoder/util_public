@@ -5,6 +5,46 @@ body{
   flex-direction: column;
   overflow-x: hidden;
 }
+.owl-next, .owl-prev {
+  display: none;
+}
+.owl-carousel button.owl-dot {
+  outline: none;
+  background: #8e8e8e;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* padding: 5px; */
+  margin: 3px;
+}
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.item-house{
+  height: 100%;
+}
+.item-house img{
+  max-height: 170px;
+  height: 100%;
+  object-fit: cover;
+}
+.item-house:hover{
+  opacity: 0.7;
+}
+.owl-stage{
+  display: flex;
+}
+.owl-carousel button.owl-dot.active{
+  background: #81ab35 !important;
+}
+.owl-carousel button.owl-dot:hover{ 
+  background: #3b3b3b;
+}
 .well-row{
   display: flex;
 }
@@ -97,19 +137,15 @@ a {
 .tiny-text img {
   padding: 10px 0;
 }
-.tiny-text > h1:after, .tiny-text >h2:after, .tiny-text >h3:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+.tiny-text > h1, .tiny-text >h2, .tiny-text >h3 {
+  padding-bottom: 10px;
+  overflow-x: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .tiny-text > h1,.tiny-text >h2,.tiny-text >h3{
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .tiny-text > h1 *,.tiny-text >h2 *,.tiny-text >h3 *{
   font-size: inherit !important;
@@ -166,6 +202,9 @@ section#subintro{
 }
 .menu-line{
   display: none;
+}
+ul.project-detail li{
+  margin-bottom: 10px;
 }
 @media (max-width: 979px){
   .home-big-text{
