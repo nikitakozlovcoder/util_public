@@ -8,6 +8,13 @@ body{
 .info h2{
   white-space: nowrap;
 }
+#sequence li {
+  list-style: none;
+
+}
+#sequence{
+  overflow: visible;
+}
 .owl-next, .owl-prev {
   display: none;
 }
@@ -263,7 +270,7 @@ ul.project-detail li{
     background-color: #ffff;
   }
   .navbar-fixed-top-opened{
-    height: 280px !important;
+    height: 320px !important;
 
   }
   nav ul li {
