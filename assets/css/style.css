@@ -353,6 +353,7 @@ section#subintro {
 
 .home-posts .post-video, .home-posts .post-image, .home-posts .post-audio, .home-posts .post-slider {
   margin-bottom: 15px;
+  max-height: 220px;
 }
 
 .touch-device .post-carousel .entry-audio {
@@ -757,6 +758,7 @@ article button.btn {
 
 .post-image img {
   margin-bottom: 30px;
+  max-height: 220px;
 }
 
 .post-image img:hover {
@@ -1848,7 +1850,13 @@ img.alignright {
   }
 }
 
+@media (min-width: 768px) {
+  .contact_with_us_h3{
+    padding-left: 40px;
+  }
+}
 @media (max-width: 767px) {
+  
   .navbar .navbar-inner .container .logo {
     padding-left: 20px;
     padding-right: 20px;
